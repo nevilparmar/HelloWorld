@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+	<html>
+	<body bgcolor="#74ACEB   ">
+
+
+	<body>
+<h2>Welcome to Build Your Career</h2>
+
+<br>
+<br>
+
+<h3>Please Create Your Profile and Fill out all the Information</h3>
+
+    <form action="insert.php" method="post">
+
+        Name: <input type="text" name="name" value="">
+        <br>
+        <br>
+        Age: <input type="text" name="age" Value="" size="5">
+        <br>
+        <input type="radio" name="gender" value="Male" checked> Male<br>
+        <input type="radio" name="gender" value="Female"> Female<br>
+        <input type="radio" name="gender" value="Other"> Other<br>
+        Level of Education which you have successfully completed and are currently involved in: <input type="text" name="education_level"><br>
+        <br>
+        Degree Achieved or your most recent successful completed Institution or Program from Trade School, Online Course, Private Program: <input type="text" name="degree"><br>
+        <br>
+        Include the List of all Additional Certificates you have achieved which will better your opportunity in landing a Job: <input type="text" name="certificates"><br>
+        <br>
+        Skills and Specialization in which you are proficient in showing off to your future Organization: <input type="text" name="Skills_specialization"><br>
+        <br>
+        Veteran Status:
+        <br>
+        <input type="radio" name="veteran" value="Yes" checked> Yes<br>
+        <input type="radio" name="veteran" value="No" checked> No<br>
+        <input type="radio" name="veteran" value="N/A" checked> N/A<br>
+        <br>
+        <br>
+        <input type="submit" value="Create Profile">
+
+    </form>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h1>Search</h1><br />
+
+
+<form action="results.php" method="post">
+    <p><strong>Search by:</strong>
+
+
+        <select name="searchtype">
+            <option value="Job_type">Job Type</option>
+            <option value="Location">Location</option>
+            <option value="Salary">Salary</option>
+        </select>
+    </p>
+
+
+    <strong>Enter the Job in which you are interested in:</strong><br />
+    <input name="searchterm" type="text" size="40">
+
+    <input type="submit" name="submit" value="Search">
+</form>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  
+  <h3>Please Upload your Resume for the Companies to look at your Credential.
+      Our team will review your application and will be in touch if your qualifications
+      match our needs for the role. If you are not selected for this position,
+      keep an eye on our jobs page as we're growing and adding openings.<h3>
+    <form method="post" enctype="multipart/form-data" action="upload.php">
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </form>
+
+	</body>
+</html>
